@@ -1,0 +1,23 @@
+ makeCacheMatrix <- function(x = matrix()){
+ inverse <-NULL
+ set <- function(y) {
+ x <<- y(inverse <<- NULL）
+ 
+ get <- function() x
+ print(x)
+ [1]  0  0  0 10 12  6
+ setinverse<-function(inverse) inverse<<-inverse (inverse)
+ getinverse<-function() inverse
+ 
+ 
+list(set=set,get=get, setinverse=setinverse, getinverse=getinverse)
+
+cacheSolve <- function(x,...) {
+inverse <- x$getinverse()
+if(!is.null(inverse)）
+return(inverse)
+
+matrix <- x$get()
+inverse <- mean(matrix,…)
+x$setInverse(inverse)
+return(inverse）}
